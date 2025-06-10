@@ -3,4 +3,9 @@ module dut(input wire a,
 	output wire y
 );
 assign y=a^b;
+
+initial begin
+	$dumpfile("waveform.vcd");
+	$dumpvars;
+end
 endmodule
